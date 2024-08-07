@@ -93,7 +93,6 @@ class SiteConf:
 
     def get_grap_conf(self, url=None):
         log.info("try to load grap conf: " + url )
-        log.info(self.user.get_brush_conf())
         if not url:
             return self.user.get_brush_conf()
         for k, v in self.user.get_brush_conf().items():
